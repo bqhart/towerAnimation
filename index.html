@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Distillation Column Animation</h1>
+    
+    <label for = "liquidLevel">Upload Liquid Level CSV:</label>
+    <input type="file" id="liquidLevel" accept=".csv"/>
+
+    <!-- Input for uploading the Tray Temp CSV -->
+    <label for="trayTemp">Upload Tray Temp CSV:</label>
+    <input type="file" id="trayTemp" accept=".csv" />
+
+    <!-- Input for uploading the Vapour Flow CSV -->
+    <label for="vapourFlow">Upload Vapour Flow CSV:</label>
+    <input type="file" id="vapourFlow" accept=".csv" />
+
+    <button id="loadCSVButton">Load CSV Data</button>
+
+    <div id="output"></div>
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
